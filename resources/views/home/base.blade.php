@@ -71,61 +71,38 @@
     <div class="preloader"></div>
     <!-- End Preloader -->
 
-    <!-- Main Header / Header Style Three -->
-    <header class="main-header header-style-three">
-
-        <!-- Header Top -->
-        <div class="header-top">
-            <div class="auto-container">
-                <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <div class="left-box">
-                        <div class="text"> World’s best Finance company</div>
-                    </div>
-                    <div class="right-box align-items-center d-flex">
-
-                        <!-- Social Box -->
-                        <ul class="header-social_box-two">
-                            <li><a href="https://www.twitter.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
-                            <li><a href="https://www.facebook.com/" class="fa-brands fa-twitter fa-fw"></a></li>
-                            <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin fa-fw"></a></li>
-                            <li><a href="https://instagram.com/" class="fa-solid fa-instagram fa-fw"></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Header Top -->
+    <!-- Main Header / Header Style Two -->
+    <header class="main-header header-style-two">
 
         <!-- Header Upper -->
         <div class="header-upper">
             <div class="auto-container">
                 <div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
                     <!-- Logo Box -->
-                    <div class="logo"><a href="index"><img src="{{ asset('home/images/'.$web->logo) }}" alt="" title="" style="width: 100px;"></a></div>
+                    <div class="logo"><a href="index"><img src="{{ asset('home/images/'.$web->logo) }}" alt="" title=""  style="width: 100px;"></a></div>
 
                     <!-- Upper Right -->
                     <div class="upper-right d-flex align-items-center flex-wrap">
+                        <!-- Info Box -->
+                        <div class="upper-column info-box">
+                            <div class="icon-box flaticon-mail"></div>
+                            {{ $web->email }}
+                            <strong>Mail us</strong>
+                        </div>
                         @if(!empty($web->phone))
                             <!-- Info Box -->
                             <div class="upper-column info-box">
                                 <div class="icon-box flaticon-phone-call"></div>
-                                <strong><a href="tel:{{ $web->phone }}">Call Us: {{ $web->phone }}</a></strong>
-                                (Mon - Sun)
+                                Requesting a Call:
+                                <strong><a href="tel:{{ $web->phone }}">{{ $web->phone }}</a></strong>
                             </div>
                         @endif
                         <!-- Info Box -->
-                        <div class="upper-column info-box">
-                            <div class="icon-box flaticon-clock"></div>
-                            <strong>Mail us for help:</strong>
-                            {{ $web->email }}
-                        </div>
                         <!-- Info Box -->
                         <div class="upper-column info-box">
                             <div class="icon-box flaticon-pin"></div>
                             {!! $web->address !!}
                         </div>
-
                     </div>
 
                 </div>
@@ -141,7 +118,7 @@
                     <div class="nav-outer d-flex justify-content-between align-items-center flex-wrap">
 
                         <!-- Main Menu -->
-                        <nav class="main-menu show navbar-expand-md">
+                        <nav class="main-menu show navbar-expand-md d-flex align-items-center">
                             <div class="navbar-header">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="icon-bar"></span>
@@ -184,19 +161,14 @@
                                 </ul>
                             </div>
 
-                        </nav>
-                        <!-- Main Menu End-->
-
-                        <div class="outer-box d-flex align-items-center">
 
                             <!-- Cart Box -->
                             <div class="cart-box">
                                 <a class="cart fa-solid fa-sign-in fa-fw" href="{{ route('login') }}"></a>
                             </div>
 
-
-
-                        </div>
+                        </nav>
+                        <!-- Main Menu End-->
 
                         <!-- Mobile Navigation Toggler -->
                         <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
@@ -215,31 +187,31 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index" title=""><img src="{{ asset('home/images/'.$web->logo) }}" style="width: 100px;" alt="" title=""></a>
+                        <a href="index" title=""><img src="{{ asset('home/images/'.$web->logo) }}"  style="width: 100px;" alt="" title=""></a>
                     </div>
 
                     <!-- Right Col -->
                     <div class="right-box d-flex align-items-center flex-wrap">
                         <!-- Main Menu -->
-                        <nav class="main-menu">
+                        <nav class="main-menu d-flex align-items-center">
                             <!--Keep This Empty / Menu will come through Javascript-->
                         </nav>
                         <!-- Main Menu End-->
 
                         <div class="outer-box d-flex align-items-center">
 
-
-                            <!-- Cart Box -->
-                            <div class="cart-box">
-                                <a class="cart fa-solid fa-sign-in fa-fw" href="{{ route('login') }}"></a>
-                            </div>
-
-
-
-                            <!-- Mobile Navigation Toggler -->
-                            <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
+                            <!-- Social Box -->
+                            <ul class="header-social_box style-two">
+                                <li><a href="https://www.twitter.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
+                                <li><a href="https://www.facebook.com/" class="fa-brands fa-twitter fa-fw"></a></li>
+                                <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin fa-fw"></a></li>
+                                <li><a href="https://instagram.com/" class="fa-solid fa-instagram fa-fw"></a></li>
+                            </ul>
 
                         </div>
+
+                        <!-- Mobile Navigation Toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
 
                     </div>
 
@@ -253,7 +225,7 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon fas fa-window-close fa-fw"></span></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index"><img src="{{ asset('home/images/'.$web->logo) }}" style="width: 100px;" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index"><img src="{{ asset('home/images/'.$web->logo) }}" alt="" title=""></a></div>
 
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
@@ -530,18 +502,7 @@
 <!-- end popup massage -->
 @stack('js')
 
-<!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-    var _smartsupp = _smartsupp || {};
-    _smartsupp.key = 'c2fd919e8537bc3a91ef45ec8c35a526b9cbe189';
-    window.smartsupp||(function(d) {
-        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-        c.type='text/javascript';c.charset='utf-8';c.async=true;
-        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-    })(document);
-</script>
-<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
 </body>
 
 </html>

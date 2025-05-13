@@ -1,9 +1,8 @@
-/* In-Time Businees Consulting HTML-5 Template */
 
-/* 
-	
+/*
+
 	font-family: 'Roboto', sans-serif;
-	
+
 */
 
 @import url('global.css');
@@ -18,7 +17,7 @@
 @import url('magnific-popup.css');
 @import url('odometer-theme-default.css');
 
-/*** 
+/***
 
 ====================================================================
 	Slider Two
@@ -364,7 +363,7 @@
     100% {box-shadow: 0 0 0 0 rgba(253, 167, 0, 0);}
 }
 
-/*** 
+/***
 
 ====================================================================
 	Feature One
@@ -517,7 +516,7 @@
 	justify-content: center;
 	align-items: center;
 	background-color:var(--color-three);
-	
+
 	-webkit-transition: .3s cubic-bezier(.24,.74,.58,1);
     -khtml-transition: .3s cubic-bezier(.24,.74,.58,1);
     -moz-transition: .3s cubic-bezier(.24,.74,.58,1);
@@ -626,7 +625,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	About One
@@ -820,7 +819,7 @@
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
 	-o-transition: all 300ms ease;
-	transition: all 300ms ease;	
+	transition: all 300ms ease;
 	border:3px solid var(--main-color);
 	background-color:var(--white-color);
 }
@@ -839,7 +838,7 @@
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
 	-o-transition: all 300ms ease;
-	transition: all 300ms ease;	
+	transition: all 300ms ease;
 	border:3px solid var(--main-color);
 	background-color:var(--white-color);
 }
@@ -1070,7 +1069,7 @@
 	height:80px;
 	border-radius:50%;
 	background-color:var(--white-color);
-	
+
 	text-align:center;
 	line-height:80px;
 	color:var(--main-color);
@@ -1912,7 +1911,7 @@
 	margin-bottom:var(--margin-bottom-20);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Default Form
@@ -2127,7 +2126,7 @@
 	margin-bottom:var(--margin-bottom-10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter One
@@ -2561,7 +2560,7 @@
 	font-family: 'Font Awesome 5 Pro';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Clients One
@@ -2611,7 +2610,7 @@
 	filter: grayscale(0%);
 }
 
-/*** 
+/***
 
 ====================================================================
 	CTA One
@@ -2665,7 +2664,7 @@
 	background-color:var(--color-fourtynine);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Two
@@ -2891,7 +2890,7 @@
 	transition-delay: 1200ms;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Feature Two
@@ -3562,7 +3561,7 @@
 	margin-top:var(--margin-top-30);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Solution One
@@ -3704,7 +3703,7 @@
 }
 
 .solution-one_block-inner:hover .solution-one_title-box{
-	border-color:var(--color-eighteen); 
+	border-color:var(--color-eighteen);
 	-webkit-transition-delay: 500ms;
 	-moz-transition-delay: 500ms;
 	-ms-transition-delay: 500ms;
@@ -3786,7 +3785,7 @@
 	background-color:var(--color-twenty);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Company One
@@ -3927,7 +3926,7 @@
 	color:var(--color-twentyone);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Three
@@ -4118,7 +4117,7 @@
 	transition-delay: 1200ms;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Feature Three
@@ -4236,7 +4235,7 @@
 	z-index:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Two
@@ -4399,7 +4398,7 @@
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Case One
@@ -4545,7 +4544,7 @@
 	filter: grayscale(0%);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Skill One
@@ -4803,7 +4802,7 @@
 .news-block-three .image img{
 	position:relative;
 	width:100%;
-	display:block; 
+	display:block;
 	transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -4906,7 +4905,7 @@
 	color:var(--color-twentyfive);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Four
@@ -5130,7 +5129,7 @@
 	background-repeat:no-repeat;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Three
@@ -5235,7 +5234,7 @@
 	margin-left:var(--margin-left-15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Agency One
@@ -5349,7 +5348,7 @@
 	margin:0 auto;
 	border-radius:150px;
 	line-height:120px;
-	text-align:center; 
+	text-align:center;
 	color:var(--white-color);
 	font-family: "Flaticon";
 	font-size:var(--font-60);
@@ -5362,7 +5361,7 @@
 	transform: scale(1,0.2);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Finance One
@@ -5503,7 +5502,7 @@
 	margin-bottom:var(--margin-bottom-30);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Two
@@ -6419,7 +6418,7 @@
 	background-color: var(--color-fiftythree);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Five
@@ -6626,7 +6625,7 @@
 	width:100%;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Four
@@ -6814,7 +6813,7 @@
 	font-family: 'Font Awesome 5 Pro';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Product Tabs Style
@@ -6872,10 +6871,10 @@
 }
 
 .services-three-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Tour One
@@ -6916,7 +6915,7 @@
 	padding-left:var(--padding-left-30);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Accordion Style
@@ -7008,7 +7007,7 @@
 }
 
 .accordion-box .block .acc-btn.active .icon-outer{
-	
+
 }
 
 .accordion-box .block .acc-content{
@@ -7017,11 +7016,11 @@
 }
 
 .accordion-box .block .acc-content .content-text{
-	
+
 }
 
 .accordion-box .block .acc-content.current{
-	display:block;	
+	display:block;
 }
 
 .accordion-box .block .content{
@@ -7169,7 +7168,7 @@
 	background-color:var(--color-fifty);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Skill Two
@@ -7182,7 +7181,7 @@
 	padding:0px 0px 0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter One
@@ -7260,7 +7259,7 @@
 	margin-top:var(--margin-top-5);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Portfolio One
@@ -7404,7 +7403,7 @@
 	bottom:0px;
 	right:0px;
 	z-index:1;
-	
+
 	transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
     -webkit-transition: all 300ms ease;
@@ -7444,7 +7443,7 @@
 	z-index:1;
 	align-items: center;
 	justify-content: center;
-	
+
 	transition: -webkit-transform 0.4s ease;
 	transition: transform 0.4s ease;
 	transition: transform 0.4s ease,-webkit-transform 0.4s ease;
@@ -7531,7 +7530,7 @@
 	overflow:visible;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team One
@@ -7602,7 +7601,7 @@
 }
 
 .team-one_block-inner:hover .team-one_block-content{
-	border-color:var(--color-eighteen); 
+	border-color:var(--color-eighteen);
 	-webkit-transition-delay: 500ms;
 	-moz-transition-delay: 500ms;
 	-ms-transition-delay: 500ms;
@@ -7990,7 +7989,7 @@
 
 .news-block-five .read-more:before{
 	position:absolute;
-	content: "\f125"; 
+	content: "\f125";
 	right:0px;
 	font-family: "Flaticon";
 }
@@ -8009,7 +8008,7 @@
 	color:var(--color-fiftythree);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Six
@@ -8242,7 +8241,7 @@
 	transition-delay: 1200ms;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Feature Four
@@ -8307,7 +8306,7 @@
 	margin-top: var(--margin-top-10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Feature Four
@@ -8561,7 +8560,7 @@
 	margin-top: var(--margin-top-15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Finance Two
@@ -8646,7 +8645,7 @@
 	font-size: var(--font-60);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Success One
@@ -8691,7 +8690,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Finance Two
@@ -9210,7 +9209,7 @@
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--color-sixtythree) 100%);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Clients Two
@@ -9265,7 +9264,7 @@
 	filter: grayscale(0%);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Seven
@@ -9547,7 +9546,7 @@
 	transition-delay: 900ms;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Agency Two
@@ -9628,7 +9627,7 @@
 	display:block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Consult One
@@ -9701,7 +9700,7 @@
 	font-family: 'Font Awesome 5 Pro';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid One
@@ -9785,7 +9784,7 @@
 	color: var(--color-thirtyfive);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Consult Two
@@ -9821,7 +9820,7 @@
 	margin-top: var(--margin-top-35);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Video One
@@ -9953,7 +9952,7 @@
 	margin-top: var(--margin-top-15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Four
@@ -10017,7 +10016,7 @@
 	font-family:var(--font-family-Poppins);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Five
@@ -10320,7 +10319,7 @@
 	font-family: 'Font Awesome 5 Pro';
 }
 
-/*** 
+/***
 
 ====================================================================
 	CTA Two
@@ -10368,7 +10367,7 @@
 	margin-bottom: var(--margin-zero);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Clients Three
@@ -10492,14 +10491,14 @@
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
 	-o-transition: all 300ms ease;
-	transition: all 300ms ease;	
+	transition: all 300ms ease;
 }
 
 .page-title .bread-crumb li a:hover{
 	color: var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Two
@@ -10528,7 +10527,7 @@
 }
 
 .team-two .owl-carousel{
-	margin:0px -15px; 
+	margin:0px -15px;
 	width:auto;
 }
 
@@ -10585,7 +10584,7 @@
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
-	transition: all 500ms ease;	
+	transition: all 500ms ease;
 }
 
 .team-two_block-inner:hover .upper-box{
@@ -10620,7 +10619,7 @@
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
-	transition: all 500ms ease;	
+	transition: all 500ms ease;
 	color: var(--color-two);
 	font-size: var(--font-16);
 }
@@ -10636,7 +10635,7 @@
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
-	transition: all 500ms ease;	
+	transition: all 500ms ease;
 	transform: translateY(-25px);
 }
 
@@ -10661,7 +10660,7 @@
 	background-color: var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Three
@@ -10678,7 +10677,7 @@
 	margin-top: var(--margin-top-20);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Growth One
@@ -10727,7 +10726,7 @@
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
-	transition: all 500ms ease;	
+	transition: all 500ms ease;
 	background-color: var(--color-seven);
 	border-bottom: 5px solid transparent;
 }
@@ -10845,7 +10844,7 @@
 	background-color: var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Error Page
@@ -11362,7 +11361,7 @@
 
 .sidebar .search-box .form-group{
 	position:relative;
-	margin:0px;	
+	margin:0px;
 }
 
 .sidebar .search-box .form-group input[type="text"],
@@ -11881,7 +11880,7 @@
 	background-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -11996,7 +11995,7 @@
 .sidebar-page-container .comments-area .comment-info{
 	color:#3e5773;
 	line-height:24px;
-	font-size:13px;	
+	font-size:13px;
 }
 
 .sidebar-page-container .comments-area .comment-box strong{
@@ -12035,7 +12034,7 @@
 	text-transform: uppercase;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comment Form

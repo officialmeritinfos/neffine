@@ -78,100 +78,83 @@
 
     </style>
 @endpush
-    <!-- Slider Three -->
-    <section class="slider-three">
-        <div class="single-item-carousel owl-carousel owl-theme">
 
-            <!-- Slide -->
-            <div class="slide">
-                <div class="slider-three_image-layer" style="background-image:url({{ asset('home/images/main-slider/4.jpg') }})"></div>
-                <div class="auto-container">
+<!-- Main Slider -->
+<section class="slider-two">
+    <div class="single-item-carousel owl-carousel owl-theme">
 
-                    <!-- Content Column -->
-                    <div class="slider-three-content">
-                        <div class="slider-three_inner">
-                            <div class="slider-three_icon"><img src="{{ asset('home/images/main-slider/logo-icon.png') }}" alt="" /></div>
-                            <h1 class="slider-three_heading">We help investors solve <br> complex financial problems.</h1>
-                            <div class="slider-three_text">
-                                With our integration of a Robust AI model, we are able to solve complex financial needs
-                                of our users in minutes.
-                            </div>
-                            <!-- Button Box -->
-                            <div class="slider-three_button-box">
-                                <a class="btn-style-seven theme-btn btn-item" href="{{ route('register') }}">
-                                    <div class="btn-wrap">
-                                        <span class="text-one">Join us <i class="fa-solid fa-caret-right fa-fw"></i></span>
-                                        <span class="text-two">Join us <i class="fa-solid fa-caret-right fa-fw"></i></span>
-                                    </div>
-                                </a>
-                            </div>
+        <!-- Slide -->
+        <div class="slide">
+            <div class="slider-two_image-layer" style="background-image:url({{asset('home/images/main-slider/2.jpg')}})"></div>
+            <div class="auto-container">
+
+                <!-- Content Column -->
+                <div class="slider-two-content">
+                    <div class="slider-two_inner">
+                        <div class="slider-two_title">{{ $siteName }} Strategy</div>
+                        <h1 class="slider-two_heading">Navigate Global Markets<br> With Confidence</h1>
+                        <div class="slider-two_text">From crypto to gold, real estate to retirement plans — we help you build resilient wealth in a rapidly evolving financial world.</div>
+                        <!-- Button Box -->
+                        <div class="slider-two_button-box d-flex align-items-center flex-wrap">
+                            <a class="btn-style-three theme-btn clearfix" href="{{ route('login') }}">
+                                <span class="icon flaticon-user"></span>
+                                <div class="btn-wrap">
+                                    <span class="text-one">Login</span>
+                                    <span class="text-two">Login</span>
+                                </div>
+                            </a>
+                            <a class="btn-style-four theme-btn" href="{{ route('register') }}">
+                                <span class="icon flaticon-cog"></span>
+                                <div class="btn-wrap">
+                                    <span class="text-one">Get Started</span>
+                                    <span class="text-two">Get Started</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
-
                 </div>
+
             </div>
-
-            <!-- Slide -->
-            <div class="slide">
-                <div class="slider-three_image-layer" style="background-image:url({{ asset('home/images/main-slider/6.jpg') }})"></div>
-                <div class="auto-container">
-
-                    <!-- Content Column -->
-                    <div class="slider-three-content">
-                        <div class="slider-three_inner">
-                            <div class="slider-three_icon"><img src="{{ asset('home/images/main-slider/logo-icon.png') }}" alt="" /></div>
-                            <h1 class="slider-three_heading">Grow your Finance <br> and prepare for Retirement</h1>
-                            <div class="slider-three_text">
-                                Retire in grand style with our Retirement plans crafted just for you to help you
-                                grow your wealth portfolio.
-                            </div>
-                            <!-- Button Box -->
-                            <div class="slider-three_button-box">
-                                <a class="btn-style-seven theme-btn btn-item" href="{{ route('register') }}">
-                                    <div class="btn-wrap">
-                                        <span class="text-one">Get Started <i class="fa-solid fa-caret-right fa-fw"></i></span>
-                                        <span class="text-two">Get Started <i class="fa-solid fa-caret-right fa-fw"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Slide -->
-            <div class="slide">
-                <div class="slider-three_image-layer" style="background-image:url({{ asset('home/images/main-slider/4.jpg') }})"></div>
-                <div class="auto-container">
-
-                    <!-- Content Column -->
-                    <div class="slider-three-content">
-                        <div class="slider-three_inner">
-                            <div class="slider-three_icon"><img src="{{ asset('home/images/main-slider/logo-icon.png') }}" alt="" /></div>
-                            <h1 class="slider-three_heading">Becoming a mining <br> powerhouse</h1>
-                            <div class="slider-three_text">
-                                {{$siteName}} engages in heavy-task mining process and airlifts the challenges for our
-                                Clients using our Grade-one AI powered mining house.
-                            </div>
-                            <!-- Button Box -->
-                            <div class="slider-three_button-box">
-                                <a class="btn-style-seven theme-btn btn-item" href="{{ route('register') }}">
-                                    <div class="btn-wrap">
-                                        <span class="text-one">Start Mining <i class="fa-solid fa-caret-right fa-fw"></i></span>
-                                        <span class="text-two">STart Mining <i class="fa-solid fa-caret-right fa-fw"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
-    </section>
-    <!-- End Main Slider -->
+
+        <!-- Slide -->
+        <div class="slide">
+            <div class="slider-two_image-layer" style="background-image:url({{asset('home/images/main-slider/2.jpg')}})"></div>
+            <div class="auto-container">
+
+                <!-- Content Column -->
+                <div class="slider-two-content">
+                    <div class="slider-two_inner">
+                        <div class="slider-two_title">Why Investors Trust {{ $siteName }}</div>
+                        <h1 class="slider-two_heading">Future-Proof Your Portfolio<br> With Smart Investments</h1>
+                        <div class="slider-two_text">We connect you to high-growth opportunities in medical cannabis, oil & gas, real estate, and blockchain-backed assets.</div>
+                        <!-- Button Box -->
+                        <div class="slider-two_button-box d-flex align-items-center flex-wrap">
+                            <a class="btn-style-three theme-btn clearfix" href="{{ route('login') }}">
+                                <span class="icon flaticon-user"></span>
+                                <div class="btn-wrap">
+                                    <span class="text-one">Login</span>
+                                    <span class="text-two">Login</span>
+                                </div>
+                            </a>
+                            <a class="btn-style-four theme-btn" href="{{ route('register') }}">
+                                <span class="icon flaticon-cog"></span>
+                                <div class="btn-wrap">
+                                    <span class="text-one">Get Started</span>
+                                    <span class="text-two">Get Started</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Main Slider -->
+
 
     <!-- Feature Three -->
     <section class="feature-three">
