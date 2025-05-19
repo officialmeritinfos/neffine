@@ -199,7 +199,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index" title=""><img src="{{ asset('home/images/logo.png') }}" alt="" title=""></a>
+                        <a href="index" title=""><img src="{{ asset('home/images/'.$web->logo) }}" style="width: 100px;" alt="" title=""></a>
                     </div>
 
                     <!-- Right Col -->
