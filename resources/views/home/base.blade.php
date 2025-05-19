@@ -1,10 +1,7 @@
-
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
-
     <!-- Stylesheets -->
     <link href="{{ asset('home/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('home/css/style.css') }}" rel="stylesheet">
@@ -23,6 +20,7 @@
     <meta name="description" content="{{$web->description}}">
     <meta name="keywords" content="business, marketing, agency">
     <title> {{$siteName}} | {{$pageName}}</title>
+
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -65,30 +63,25 @@
 
 <body>
 @inject('injected','App\Defaults\Custom')
+
 <div class="page-wrapper">
 
     <!-- Preloader -->
-    <div class="preloader"></div>
+{{--    <div class="preloader"></div>--}}
     <!-- End Preloader -->
 
-    <!-- Main Header / Header Style Two -->
-    <header class="main-header header-style-two">
+    <!-- Main Header -->
+    <header class="main-header">
 
         <!-- Header Upper -->
         <div class="header-upper">
             <div class="auto-container">
                 <div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
                     <!-- Logo Box -->
-                    <div class="logo"><a href="index"><img src="{{ asset('home/images/'.$web->logo) }}" alt="" title=""  style="width: 100px;"></a></div>
+                    <div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('home/images/'.$web->logo) }}" style="width: 100px;" alt="" title=""></a></div>
 
                     <!-- Upper Right -->
                     <div class="upper-right d-flex align-items-center flex-wrap">
-                        <!-- Info Box -->
-                        <div class="upper-column info-box">
-                            <div class="icon-box flaticon-mail"></div>
-                            {{ $web->email }}
-                            <strong>Mail us</strong>
-                        </div>
                         @if(!empty($web->phone))
                             <!-- Info Box -->
                             <div class="upper-column info-box">
@@ -98,11 +91,17 @@
                             </div>
                         @endif
                         <!-- Info Box -->
+                        <div class="upper-column info-box">
+                            <div class="icon-box flaticon-clock"></div>
+                            Sunday - Saturday:
+                            <strong>24/7</strong>
+                        </div>
                         <!-- Info Box -->
                         <div class="upper-column info-box">
                             <div class="icon-box flaticon-pin"></div>
                             {!! $web->address !!}
                         </div>
+
                     </div>
 
                 </div>
@@ -118,7 +117,7 @@
                     <div class="nav-outer d-flex justify-content-between align-items-center flex-wrap">
 
                         <!-- Main Menu -->
-                        <nav class="main-menu show navbar-expand-md d-flex align-items-center">
+                        <nav class="main-menu show navbar-expand-md">
                             <div class="navbar-header">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="icon-bar"></span>
@@ -161,14 +160,27 @@
                                 </ul>
                             </div>
 
+                        </nav>
+                        <!-- Main Menu End-->
+
+                        <div class="outer-box d-flex align-items-center">
 
                             <!-- Cart Box -->
                             <div class="cart-box">
                                 <a class="cart fa-solid fa-sign-in fa-fw" href="{{ route('login') }}"></a>
                             </div>
 
-                        </nav>
-                        <!-- Main Menu End-->
+                            <!-- Button Box -->
+                            <div class="button-box">
+                                <a class="btn-style-one theme-btn btn-item" href="{{ route('register') }}">
+                                    <div class="btn-wrap">
+                                        <span class="text-one">Create an Account <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+                                        <span class="text-two">Create an Account <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
 
                         <!-- Mobile Navigation Toggler -->
                         <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
@@ -187,31 +199,33 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index" title=""><img src="{{ asset('home/images/'.$web->logo) }}"  style="width: 100px;" alt="" title=""></a>
+                        <a href="index" title=""><img src="{{ asset('home/images/logo.png') }}" alt="" title=""></a>
                     </div>
 
                     <!-- Right Col -->
                     <div class="right-box d-flex align-items-center flex-wrap">
                         <!-- Main Menu -->
-                        <nav class="main-menu d-flex align-items-center">
+                        <nav class="main-menu">
                             <!--Keep This Empty / Menu will come through Javascript-->
                         </nav>
                         <!-- Main Menu End-->
 
                         <div class="outer-box d-flex align-items-center">
 
-                            <!-- Social Box -->
-                            <ul class="header-social_box style-two">
-                                <li><a href="https://www.twitter.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
-                                <li><a href="https://www.facebook.com/" class="fa-brands fa-twitter fa-fw"></a></li>
-                                <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin fa-fw"></a></li>
-                                <li><a href="https://instagram.com/" class="fa-solid fa-instagram fa-fw"></a></li>
-                            </ul>
+                            <!-- Button Box -->
+                            <div class="button-box">
+                                <a class="btn-style-one theme-btn btn-item" href="{{ route('register') }}">
+                                    <div class="btn-wrap">
+                                        <span class="text-one">Create an Account <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+                                        <span class="text-two">Create an Account <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mobile Navigation Toggler -->
+                            <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
 
                         </div>
-
-                        <!-- Mobile Navigation Toggler -->
-                        <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
 
                     </div>
 
@@ -225,8 +239,16 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon fas fa-window-close fa-fw"></span></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index"><img src="{{ asset('home/images/'.$web->logo) }}" alt="" title=""></a></div>
-
+                <div class="nav-logo"><a href="index"><img src="{{ asset('home/images/logo.png') }}" alt="" title=""></a></div>
+                <!-- Search -->
+                <div class="search-box">
+                    <form method="post" action="https://html.themexriver.com/intime/intime/contact">
+                        <div class="form-group">
+                            <input type="search" name="search-field" value="" placeholder="SEARCH HERE" required>
+                            <button type="submit"><span class="icon flaticon-001-loupe"></span></button>
+                        </div>
+                    </form>
+                </div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div>
@@ -242,24 +264,20 @@
         <div class="auto-container">
             <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <div class="left-box">
-                    <h3 class="cta-one_heading">Looking for the Best Investment and Asset manager?</h3>
-                    <div class="cta-one_text">{{ $siteName }} is poised to help change your financial story.</div>
+                    <h3 class="cta-one_heading">Ready to Start Growing Your Wealth?</h3>
+                    <div class="cta-one_text">Join thousands using {{ $siteName }} to invest smarter — from crypto to real estate and more.</div>
                 </div>
                 <div class="right-box">
-                    <a class="btn-style-seven theme-btn clearfix" href="#">
-                        <div class="btn-wrap">
-                            <span class="text-one">Get a quote</span>
-                            <span class="text-two">Get a quote</span>
-                        </div>
-                    </a>
+                    <a class="cta-one_btn theme-btn" href="{{ route('register') }}">Create an Account</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- End CTA One -->
 
+
     <!-- Footer -->
-    <footer class="main-footer style-three" style="background-image:url({{ asset('home/images/background/pattern-11.png') }})">
+    <footer class="main-footer" style="background-image:url({{ asset('home/images/background/pattern-6.png') }})">
         <div class="auto-container">
             <!-- Widgets Section -->
             <div class="widgets-section">
@@ -273,64 +291,86 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="index"><img src="{{ asset('home/images/'.$web->logo) }}" alt="" /></a>
+                                        <a href="{{ url('/') }}">
+                                            <img src="{{ asset('home/images/' . $web->logo) }}" alt="{{ $siteName }} Logo" />
+                                        </a>
                                     </div>
                                     <div class="text">
-                                        {{ $siteName }} is a trailblazing company that leverages the power of AI to provide
-                                        unparalleled cryptocurrency investment, mining, and trading solutions.
+                                        At {{ $siteName }}, we empower individuals and institutions to grow wealth through secure, diversified investments in crypto, gold, real estate, oil & gas, and more.
                                     </div>
                                     <a href="{{ url('about') }}" class="theme-btn about-btn">About us</a>
                                 </div>
                             </div>
 
 
+                            <!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget newsletter-widget">
+                                    <h4>Newsletter</h4>
+                                    <div class="text">Subscribe our newsletter to get our latest update & news</div>
+
+                                    <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                        <div class="tradingview-widget-container__widget"></div>
+                                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+                                            {
+                                                "feedMode": "market",
+                                                "market": "stock",
+                                                "isTransparent": false,
+                                                "displayMode": "regular",
+                                                "width": "100%",
+                                                "height": "400",
+                                                "colorTheme": "light",
+                                                "locale": "en"
+                                            }
+                                        </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+
+                                </div>
+                            </div>
 
                         </div>
                     </div>
 
                     <!-- Big Column -->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
                         <div class="row clearfix">
 
                             <!-- Footer Column -->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget contact-widget">
                                     <h4>Official info:</h4>
                                     <ul class="contact-list">
-                                        <li><span class="icon fa fa-map"></span>{!! $web->address !!}</li>
+                                        <li><span class="icon fa fa-phone"></span> {!! $web->address !!}</li>
                                         <li><span class="icon fa fa-envelope"></span> {{ $web->email }}</li>
                                     </ul>
                                     <div class="timing">
                                         <strong>Open Hours: </strong>
-                                        Mon - Sun:  24/7
+                                        Sun - Sat: 24/7
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Footer Column -->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget instagram-widget">
-                                    <h4>Latest News</h4>
+                                    <h4>Gallery</h4>
                                     <div class="widget-content">
                                         <div class="images-outer clearfix">
-                                            <!-- TradingView Widget BEGIN -->
-                                            <div class="tradingview-widget-container">
-                                                <div class="tradingview-widget-container__widget"></div>
-                                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-                                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                                                    {
-                                                        "feedMode": "market",
-                                                        "market": "stock",
-                                                        "isTransparent": false,
-                                                        "displayMode": "regular",
-                                                        "width": "100%",
-                                                        "height": "400",
-                                                        "colorTheme": "light",
-                                                        "locale": "en"
-                                                    }
-                                                </script>
-                                            </div>
-                                            <!-- TradingView Widget END -->
+                                            <!--Image Box-->
+                                            <figure class="image-box"><a class="lightbox-image" href="{{ asset('home/images/gallery/1.jpg') }}"><img src="{{ asset('home/images/gallery/footer-gallery-thumb-1.jpg') }}" alt=""></a></figure>
+                                            <!--Image Box-->
+                                            <figure class="image-box"><a class="lightbox-image" href="{{ asset('home/images/gallery/2.jpg') }}"><img src="{{ asset('home/images/gallery/footer-gallery-thumb-2.jpg') }}" alt=""></a></figure>
+                                            <!--Image Box-->
+                                            <figure class="image-box"><a class="lightbox-image" href="{{ asset('home/images/gallery/3.jpg') }}"><img src="{{ asset('home/images/gallery/footer-gallery-thumb-3.jpg') }}" alt=""></a></figure>
+                                            <!--Image Box-->
+                                            <figure class="image-box"><a class="lightbox-image" href="{{ asset('home/images/gallery/4.jpg') }}"><img src="{{ asset('home/images/gallery/footer-gallery-thumb-4.jpg') }}" alt=""></a></figure>
+                                            <!--Image Box-->
+                                            <figure class="image-box"><a class="lightbox-image" href="{{ asset('home/images/gallery/5.jpg') }}"><img src="{{ asset('home/images/gallery/footer-gallery-thumb-5.jpg') }}" alt=""></a></figure>
+                                            <!--Image Box-->
+                                            <figure class="image-box"><a class="lightbox-image" href="{{ asset('home/images/gallery/6.jpg') }}"><img src="{{ asset('home/images/gallery/footer-gallery-thumb-6.jpg') }}" alt=""></a></figure>
                                         </div>
                                     </div>
                                 </div>
@@ -343,13 +383,12 @@
             </div>
 
             <div class="footer-bottom">
-                <div class="copyright">2017 - {{ date('Y') }} &copy; All rights reserved by <a href="{{ url('/') }}">{{ $siteName }}</a></div>
+                <div class="copyright">2019 - {{ date('Y') }} &copy; All rights reserved by <a href="#">{{ $siteName }}</a></div>
             </div>
 
         </div>
     </footer>
     <!-- Footer -->
-
 
 
     @if (!empty($web->phone))
@@ -362,14 +401,17 @@
     @endif
 
     @if (!empty($web->telegram))
-    <div class="telegram-float-widget">
-        <a href="{{ $web->telegram }}" target="_blank">
-            <img src="https://cdn3.iconfinder.com/data/icons/social-icons-33/512/Telegram-512.png"
-                 alt="" width="50">
-        </a>
-    </div>
+        <div class="telegram-float-widget">
+            <a href="{{ $web->telegram }}" target="_blank">
+                <img src="https://cdn3.iconfinder.com/data/icons/social-icons-33/512/Telegram-512.png"
+                     alt="" width="50">
+            </a>
+        </div>
     @endif
 </div>
+<!-- End PageWrapper -->
+
+<!-- Scroll To Top -->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fas fa-long-arrow-up fa-fw"></span></div>
 
 <script src="{{ asset('home/js/jquery.js') }}"></script>
@@ -383,6 +425,7 @@
 <script src="{{ asset('home/js/parallax-scroll.js') }}"></script>
 <script src="{{ asset('home/js/parallax.min.js') }}"></script>
 <script src="{{ asset('home/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('home/js/parallax-scroll.js') }}"></script>
 <script src="{{ asset('home/js/tilt.jquery.min.js') }}"></script>
 <script src="{{ asset('home/js/magnific-popup.min.js') }}"></script>
 
@@ -516,5 +559,4 @@
 </script>
 <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 </body>
-
 </html>

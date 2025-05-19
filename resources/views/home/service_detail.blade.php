@@ -1,7 +1,7 @@
 @extends('home.base')
 @section('content')
     <!-- Page Title -->
-    <section class="page-title" style="background-image:url({{asset('home/images/background/5.jpg')}})">
+    <section class="page-title" style="background-image:url({{asset('home/images/background/3.jpg')}})">
         <div class="auto-container">
             <h2>{{$pageName}}</h2>
             <ul class="bread-crumb clearfix">

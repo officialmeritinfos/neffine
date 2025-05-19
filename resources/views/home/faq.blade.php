@@ -1,7 +1,7 @@
 @extends('home.base')
 @section('content')
     <!-- Page Title -->
-    <section class="page-title" style="background-image:url({{asset('home/images/background/5.jpg')}})">
+    <section class="page-title" style="background-image:url({{asset('home/images/background/3.jpg')}})">
         <div class="auto-container">
             <h2>{{$pageName}}</h2>
             <ul class="bread-crumb clearfix">
@@ -193,7 +193,7 @@
                             <div id="collapse-2-8" class="collapse" aria-labelledby="heading-2-8"
                                  data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Yes we are officially and properly registered with the United State . our company registration number is USFDAISO34847676   and registered with the name {{$siteName}}</p>
+                                    <p>Yes we are officially and properly registered with the United State and registered with the name {{$siteName}}</p>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +229,7 @@
                             <div id="collapse-2-10" class="collapse" aria-labelledby="heading-2-10"
                                  data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>You can make as many deposit as you want on any of our investment plans except the Silver Plan where you can only invest two times. And you can only withdraw once in the Silver Plan.</p>
+                                    <p>You can make as many deposit as you want on any of our investment plans except in some plans where you can only invest two times. And you can only withdraw once in the Silver Plan.</p>
                                 </div>
                             </div>
                         </div>
