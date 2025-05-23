@@ -239,16 +239,8 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon fas fa-window-close fa-fw"></span></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index"><img src="{{ asset('home/images/logo.png') }}" alt="" title=""></a></div>
-                <!-- Search -->
-                <div class="search-box">
-                    <form method="post" action="https://html.themexriver.com/intime/intime/contact">
-                        <div class="form-group">
-                            <input type="search" name="search-field" value="" placeholder="SEARCH HERE" required>
-                            <button type="submit"><span class="icon flaticon-001-loupe"></span></button>
-                        </div>
-                    </form>
-                </div>
+                <div class="nav-logo"><a href="{{ url('/') }}"><img src="{{ asset('home/images/'.$web->logo) }}" alt="" title=""></a></div>
+
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div>
