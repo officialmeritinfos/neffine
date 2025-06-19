@@ -87,9 +87,7 @@ class Withdrawals extends Controller
             User::where('id',$investor->id)->update($dataUser);
 
             $userMessage = "
-                $<b>".$withdrawal->amount." </b> has been successfully sent to your ".$withdrawal->asset."  -
-                ".$withdrawal->details.".
-                Transaction Batch is ".sha1(rand(100000000,900000000))."
+              Your Withdrawal of $<b>".$withdrawal->amount." </b> has been successfully sent to your wallet.
             ";
             $investor->notify(new DepositMail($investor,$userMessage,'Withdrawal Processed'));
             //send mail to user
