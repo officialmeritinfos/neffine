@@ -263,7 +263,7 @@ class Investors extends Controller
             //send mail to investor
             $userMessage = "
                 Your Withdrawal request of $<b>" . $input['amount'] . "</b> has been processed
-                and sent to your wallet Address. Your transaction hash is <b>".Str::random(200)."</b>
+                and sent to your wallet Address.
             ";
             //SendInvestmentNotification::dispatch($investor, $userMessage, 'Withdrawal Approved');
             $investor->notify(new InvestmentMail($investor, $userMessage, 'Withdrawal Approved'));
